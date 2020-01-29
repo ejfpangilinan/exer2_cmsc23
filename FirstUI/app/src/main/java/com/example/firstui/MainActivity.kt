@@ -32,11 +32,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun countUp(){
-        val numMsg : TextView = findViewById(R.id.text_roll)
-        val number = (numMsg.text).toInt()
-        var result_val: Int
-        if(number.toInt() < 6) {
-            result_val  = number + 1
+        val textMsg: TextView = findViewById(R.id.text_roll)
+        val num = (textMsg.text).toInt()
+        if(num < 6) num = num + 1
+        textMsg.text = num.toString()
         }
     }
 }
