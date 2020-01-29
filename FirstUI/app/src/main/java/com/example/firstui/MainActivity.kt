@@ -31,11 +31,13 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this,R.string.msg,Toast.LENGTH_LONG).show()
     }
 
-    private fun countUp(){
+    private fun countUp() {
         val textMsg: TextView = findViewById(R.id.text_roll)
         var num = (textMsg.text).toString()
         var result = num.toInt()
-        if(result < 6) {
+        if(num == "Hello User!"){
+            textMsg.text = "1"
+        }else if(result < 6) {
             textMsg.text = (result+1).toString()
         }
     }
