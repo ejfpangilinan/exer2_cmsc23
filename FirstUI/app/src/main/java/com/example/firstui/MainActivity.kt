@@ -33,9 +33,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun countUp(){
         val textMsg: TextView = findViewById(R.id.text_roll)
-        val num = (textMsg.text).toInt()
-        if(num < 6) num = num + 1
-        textMsg.text = num.toString()
+        var num = (textMsg.text).toString()
+        var result = num.toInt()
+        if(result < 6) {
+            textMsg.text = (result+1).toString()
         }
     }
 }
