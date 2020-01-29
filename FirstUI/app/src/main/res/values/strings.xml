@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">FirstUI</string>
+    <string name="app_name">exer1_Uy_diceApp</string>
     <string name="button_label_roll">Roll</string>
-    <string name="hello_user">Hello there!</string>
+    <string name="hello_user">Hello User!</string>
     <string name="msg">Meow Meow!</string>
+    <string name="count_up">Count Up</string>
 </resources>

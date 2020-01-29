@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         buttonRoll.setOnClickListener(){
             randRoll()
         }
+
+        val buttonCount: Button = findViewById(R.id.button_countup)
+        buttonCount.setOnClickListener(){
+            countUp()
+        }
     }
 
     private fun randRoll(){
@@ -25,4 +30,17 @@ class MainActivity : AppCompatActivity() {
         textMsg.text = randomInt.toString()
         Toast.makeText(this,R.string.msg,Toast.LENGTH_LONG).show()
     }
+
+    private fun countUp(){
+        val numMsg : TextView = findViewById(R.id.text_roll)
+        val number = (numMsg.text).toInt()
+        var result_val: Int
+        if(number.toInt() < 6) {
+            result_val  = number + 1
+        }
+    }
 }
+
+
+
+
